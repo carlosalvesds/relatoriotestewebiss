@@ -1,0 +1,17 @@
+Aplique a identidade visual diRoma deste kit ao projeto atual.
+
+Analise primeiro a estrutura do projeto, o framework, os estilos e os componentes existentes. Leia GUIA-VISUAL.md, tema/tokens.json, tema/tokens.css e os CSS em referencia/. Use assets/diroma-logo.png como a logo oficial desta implementação.
+
+Objetivo: reproduzir o visual do projeto de referência, com os temas claro e escuro, preservando as funcionalidades, os dados, as rotas, as integrações, a autenticação e as regras de negócio do projeto de destino. Mantenha o nome e os textos funcionais do projeto de destino; não o transforme em um sistema de consulta de NF-e.
+
+Implemente as alterações nos arquivos do projeto, não apenas uma proposta:
+1. Centralize as cores em tokens ou no mecanismo de tema existente. Tema claro padrão: fundo #f0f7ff, superfícies brancas, fundos suaves #e4f2ff, texto #142e4d, texto secundário #285984, títulos #0080D3, botões principais #0149AF e detalhes ciano #00B2E2. Use a paleta completa do kit, incluindo bordas e estados de hover.
+2. Disponibilize um seletor de tema claro/escuro. No escuro, use os valores exatos do kit e adapte também cabeçalho, grupos de campos e abas ativas conforme o guia. Preserve a logo sobre fundo branco. Integre com o sistema de tema já existente, se houver.
+3. Use Arial/sans-serif nas áreas equivalentes, título principal de 25px/600, seções de 15px/600, texto compacto de 13px e rótulos de 12px. Adapte quando a acessibilidade ou a estrutura do destino exigir, explicando diferenças relevantes.
+4. Reproduza o cabeçalho com logo à esquerda e título/subtítulo ao lado; no claro, use as faixas azul e ciano descritas no guia. Copie a logo original para a pasta de assets do destino e ajuste o caminho. Preserve proporções e o enquadramento descrito; não redesenhe nem substitua a imagem por texto.
+5. Aplique o visual aos componentes que já existem: botões, abas, campos, cartões, tabelas, uploads, mensagens e grupos expansíveis. Use superfícies planas, bordas finas e espaçamentos compactos. Não crie funcionalidades de NF-e ou novos módulos apenas por existirem na referência.
+6. Mantenha largura de conteúdo próxima de 1180px quando compatível com o layout. Adapte em 700px para cabeçalho em coluna, logo menor e campos reorganizados. Evite rolagem horizontal da página; permita rolagem local nas tabelas quando necessária.
+7. Preserve semântica, navegação por teclado, labels, texto alternativo da logo e foco visível. Confira legibilidade nos dois temas, fazendo ajustes pontuais de contraste se necessários e documentando-os.
+8. Converta os seletores específicos do Streamlit para os componentes reais do destino. Não introduza Streamlit em um projeto de outro framework. Use o mecanismo de estilo já adotado e evite dependências desnecessárias.
+
+Valide o resultado em desktop e celular, nos dois temas, incluindo estados ativo, hover, foco, erro e vazio quando existirem. Execute os checks relevantes disponíveis no projeto e confira que as funcionalidades existentes continuam operando. Ao concluir, informe os arquivos alterados, como alternar os temas, as verificações realizadas e eventuais adaptações em relação à referência.
